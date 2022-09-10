@@ -6,9 +6,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mrmouse-Home</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+        body {
+            background-color: rgb(217, 217, 217);
+            font-family: 'Inter';
+        }
+        .creator {
+            font-size: 0.9rem;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            margin-top: 1rem;
+            display: flex;
+            justify-content: center;
+            /* padding-top: 618px; */
+        }
+        .Andrew a{
+            font-size: 0.9rem;
+            color: rgb(60, 139, 211);
+            text-align: center;
+            margin-top: 1rem;
+            text-decoration: none;
+            
+        }
+        footer {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: auto;
+            width: 100vw;
+            padding: 20px;
+            background-color: black;
+        }
+        .container {
+            position: relative;
+            width: 380px;
+            height: 380px;
+            margin: auto;
+            margin-top: 20vh;
+            border-radius: 120px;
+            z-index: -2;
+        }
+        .tree-triangle3 {
+        position: absolute;
+        width: 66%;
+        height: 36%;
+        bottom: 20%;
+        left: 660px;
+        background: #034f33;
+        clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+        }.tree-triangle2 {
+        position: absolute;
+        width: 53%;
+        height: 33%;
+        bottom: 35%;
+        left: 680px;
+        clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+        background: #046944;
+        z-index: 2;
+        }.tree-triangle1 {
+        position: absolute;
+        width: 42%;
+        height: 25%;
+        bottom: 50%;
+        left: 700px;
+        background: #038052;
+        clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+        z-index: 3;
+        }
+        .trunk {
+        position: absolute;
+        width: 10%;
+        height: 16%;
+        background: #66503e;
+        z-index: -1;
+        bottom: 5%;
+        left: 760px;
+        }
+    </style>
 </head>
 <body>
-    <div onclick="nameChange()" id="titleDiv"><h1 class="text-center">Welcome. <br /> Mrmouse</h1></div>  
+    <div onclick="nameChange()" id="titleDiv"><h1 class="text-center">Welcome. <br /> Mrmouse</h1></div>
+    <div class="container">
+        <div class="tree">
+          <div class="star"></div>
+          <div class="tree-triangle1"></div>
+          <div class="tree-triangle2"></div>
+          <div class="tree-triangle3"></div>
+          <div class="trunk"></div>
+        </div>
+    </div>
+    <p class="creator">Created by&nbsp;<span class="Andrew"><a href="https://jacobvarughese.me/Andrew-Jacob-Portfolio">Andrew</a></span></p>
+    <footer><p>a</p></footer>
     <script src="index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
