@@ -11,6 +11,8 @@
         body {
             background-color: rgb(217, 217, 217);
             font-family: 'Inter';
+            margin: 0;
+            padding: 0;
         }
         h1 {
             margin: 5px;
@@ -31,16 +33,6 @@
             margin-top: 1rem;
             text-decoration: none;
             
-        }
-        footer {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            height: auto;
-            width: 100vw;
-            padding: 20px;
-            background-color: black;
         }
         .container {
             position: relative;
@@ -87,21 +79,23 @@
         bottom: 5%;
         left: 760px;
         }
+        #titleDiv {
+            display: flex;
+        }
     </style>
 </head>
 <body>
-    <div onclick="nameChange()" id="titleDiv"><h1 class="text-center">Welcome. <br /> Mrmouse</h1></div>
+    <div onclick="nameChange()" id="titleDiv"><h1 class="text-center">Welcome. <br /> Mrmouse</h1></div><div onclick="mode()">
     <div class="container">
         <div class="tree">
           <div class="star"></div>
-          <div class="tree-triangle1"></div>
+          <div class="tree-triangle1">sass</div>
           <div class="tree-triangle2"></div>
           <div class="tree-triangle3"></div>
           <div class="trunk"></div>
         </div>
     </div>
     <p class="creator">Created by&nbsp;<span class="Andrew"><a href="https://jacobvarughese.me/Andrew-Jacob-Portfolio">Andrew</a></span></p>
-    <footer><p>a</p></footer>
     <script src="index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
