@@ -8,3 +8,4 @@ function nameChange(){
     }
     id += 1
 }
+setInterval(nameChange, 10000);
