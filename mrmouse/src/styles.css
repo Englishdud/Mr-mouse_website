@@ -1,0 +1,25 @@
+#center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#center a{
+    text-decoration: none;
+    color: #f1f1f1;
+}
+#center:hover {
+    background-color: #f1f1f1;
+}
+#center a:hover {
+    color: rgb(55, 89, 176);
+}
+body {
+    background-color: #f9f9f9;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    margin: 0;
+}
+#titleDiv:hover {
+   background-color: #f1f1f1;
+   cursor: pointer;
+}
