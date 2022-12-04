@@ -1,22 +1,21 @@
-import { useState } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import { Container } from 'react-bootstrap'
 import { Home } from './pages/Home'
-import { Contact } from './pages/Contact'
 import { Store } from './pages/Store'
-import { Navbar} from './components/Navbar'
+import { Navbar } from './components/Navbar'
+import { Contact } from './pages/Contact'
 
 function App() {
-  return(
-    <>
+  return (
+      <>
       <Navbar />
-      <Container>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/store" element={<Store />} />
-        </Routes>
-      </Container>
+      <Container className="mb-4">
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/store" element={<Store />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </Container>
     </>
   )
 }
