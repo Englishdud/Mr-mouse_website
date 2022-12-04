@@ -9,11 +9,11 @@ function App() {
   return (
       <>
       <Navbar />
-      <Container className="mb-4">
+      <Container>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/store" element={<Store />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/st" element={<Store />} />
+        <Route path="/ct" element={<Contact />} />
       </Routes>
     </Container>
     </>
