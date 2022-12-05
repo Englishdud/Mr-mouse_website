@@ -1,9 +1,9 @@
 import { Routes, Route } from 'react-router-dom'
 import { Container } from 'react-bootstrap'
-import { Home } from './pages/Home'
-import { Store } from './pages/Store'
-import { Navbar } from './components/Navbar'
-import { Contact } from './pages/Contact'
+import { Home } from './pages/Home.js'
+import { Store } from './pages/Store.js'
+import { Contact } from './pages/Contact.js'
+import { Navbar } from './components/Navbar.js'
 
 function App() {
   return (
