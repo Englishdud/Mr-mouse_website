@@ -1,4 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
 *{
     margin: 0;
     padding: 0;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    font-family: 'Monoton', cursive;
+}
+a {
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
 }
